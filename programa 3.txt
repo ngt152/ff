@@ -1,0 +1,33 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int tempo_trab = 0;
+        int valor = 0;
+        double salario = 0;
+        
+        
+        for(int cont = 0; cont < 5; cont++){
+        System.out.println("Infome o tempo trabalhado");
+        tempo_trab = entrada.nextInt();
+        System.out.println("Infome o salario");
+        salario = entrada.nextInt();
+        
+        if(tempo_trab<5){
+            salario=salario+(salario*10)/100;
+        }
+        else{
+            salario=salario+(salario*20)/100;
+        }
+        }
+         System.out.println("Salario é igual a: "+salario);
+        }
+       
+    }
